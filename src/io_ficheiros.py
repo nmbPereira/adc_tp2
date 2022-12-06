@@ -1,44 +1,28 @@
-from tabulate import tabulate
+"""
+Funções de i/o de ficheiros
 
+:Date: 6 Dez 2022
+:Version: 0.1
+:Authors: Nuno Pereira, Daniel Fordham, Lourenço Albuquerque
+"""
 
-def imprime_lista(cabecalho, lista):
-    """ Imprime a :attr:`lista` na forma de uma tabela com um cabeçalho
+import pickle
 
-    Recebe uma lista na forma [{"atrib1": valor 1, "atrib2": valor 2, ...},
-    {"atrib1": valor 1, "atrib2": valor 2, ...}, ...] e imprime no terminal uma tabela
-    na forma
+def ler_ficheiro(ficheiro):
+    """ Lê os dados de um ficheiro
 
-    ==  ======  ======
-    id  atrib1  atrib2
-    ==  ======  ======
-    0   valor1  valor2
-    1   ...      ...
-    ==  ======  ======
-
-    :param cabecalho: cabecalho para a listagem
-    :param lista: lista a ser impressa
+    :param ficheiro: nome do ficheiro para ler
+    :return: o conteúdo do ficheiro (depende dos dados guardados)
     """
-
-    cabecalho = f":::::::::::::::::: {cabecalho} ::::::::::::::::::"
-    comprimento_cabecalho = len(cabecalho)
-
-    print(cabecalho)
-    imprime_lista_de_dicionarios(lista)
-    print(comprimento_cabecalho * ":")
+    with open(ficheiro, "rb") as f:
+        return pickle.load(f)
 
 
-def imprime_lista_de_dicionarios(lista):
+def guardar_ficheiro(ficheiro, dados):
+    """ Guardar os dados num ficheiro
+
+    :param ficheiro: nome do ficheiro onde vai guardar os dados
+    :param dados: dados para guardar
     """
-    .... todo ....
-    :param lista:
-    :return:
-    """
-    if len(lista) > 0:
-        # cabecalho da tabela
-        lista_a_imprimir = [["id"] + list(lista[0].keys())]
-        # dados
-        lista_a_imprimir.extend([[id] + list(d.values()) for id, d in enumerate(lista)])
-
-        print(tabulate(lista_a_imprimir, headers="firstrow"))
-    else:
-        print("lista vazia")
+    with open(ficheiro, "wb") as f:
+        pickle.dump(dados, f)

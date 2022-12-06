@@ -1,3 +1,10 @@
+"""
+Funções de i/o de terminal
+
+:Date: 6 Dez 2022
+:Version: 0.1
+:Authors: Nuno Pereira, Daniel Fordham, Lourenço Albuquerque
+"""
 from tabulate import tabulate
 
 

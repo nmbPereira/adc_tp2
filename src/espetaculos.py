@@ -1,3 +1,11 @@
+"""
+Funções de espetáculos
+
+:Date: 6 Dez 2022
+:Version: 0.1
+:Authors: Nuno Pereira, Daniel Fordham, Lourenço Albuquerque
+"""
+
 from io_terminal import imprime_lista
 
 nome_ficheiro_lista_de_espetaculos = "lista_de_espetaculos.pk"

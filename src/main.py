@@ -1,3 +1,11 @@
+"""
+Menu principal da aplicação de venda de bilhetes
+
+:Date: 6 Dez 2022
+:Version: 0.1
+:Authors: Nuno Pereira, Daniel Fordham, Lourenço Albuquerque
+"""
+
 from espetaculos import (
     nome_ficheiro_lista_de_espetaculos,
     imprime_lista_espetaculos,
