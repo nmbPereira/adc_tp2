@@ -4,7 +4,9 @@ from espetaculos import (
     criar_espetaculo
 )
 from utilizadores import (
-    nome_ficheiro_lista_de_utilizadores
+    cria_novo_utilizador,
+    nome_ficheiro_lista_de_utilizadores,
+    imprime_lista_de_utilizadores
 )
 from io_ficheiros import (
     ler_ficheiro,
@@ -46,16 +48,15 @@ def menu():
             novo_espetaculo = criar_espetaculo()
             lista_de_espetaculos.append(novo_espetaculo)
         elif op == "nu":
-            # todo - criar novo utilizador
-            pass
+            novo_utilizador = cria_novo_utilizador()
+            lista_de_utilizadores.append(novo_utilizador)
         elif op == "nb":
             # todo - criar novo bilhete
             pass
         elif op == "le":
             imprime_lista_espetaculos(lista_de_espetaculos)
         elif op == "lu":
-            # todo - listar utilizadores
-            pass
+            imprime_lista_de_utilizadores(lista_de_utilizadores)
         elif op == "lb":
             # todo - listar bilhetes
             pass
@@ -63,9 +64,7 @@ def menu():
             guardar_dados(lista_de_espetaculos, lista_de_utilizadores)
             pass
         elif op == "c":
-            lista_de_espetaculos = carregar_dados()
-            # todo - utilizadores ainda nao implementados
-            # lista_de_espetaculos, lista_de_utilizadores = carregar_dados()
+            lista_de_espetaculos, lista_de_utilizadores = carregar_dados()
         elif op == "cb":
             # todo - associar um bilhetes a um utilizador
             pass
@@ -80,9 +79,8 @@ def carregar_dados():
     :return: o conteúdo de ambos ficheiro (depende dos dados guardados)
     """
     lista_de_espetaculos = ler_ficheiro(nome_ficheiro_lista_de_espetaculos)
-    # todo - ainda não implementado
-    # lista_de_utilizadores = ler_ficheiro(nome_ficheiro_lista_de_utilizadores)
-    return lista_de_espetaculos  #, lista_de_utilizadores
+    lista_de_utilizadores = ler_ficheiro(nome_ficheiro_lista_de_utilizadores)
+    return lista_de_espetaculos, lista_de_utilizadores
 
 
 def guardar_dados(lista_de_espetaculos, lista_de_utilizadores):
@@ -94,9 +92,7 @@ def guardar_dados(lista_de_espetaculos, lista_de_utilizadores):
 
     op = input("Os dados nos ficheiros serão sobrepostos. Continuar (S/n)?")
     if op in ['s', 'S', '']:
-        guardar_ficheiro(nome_ficheiro_lista_de_espetaculos, lista_de_espetaculos)
-        #todo - ainda não implementado
-        #guardar_ficheiro(nome_ficheiro_lista_de_utilizadores, lista_de_utilizadores)
+        guardar_ficheiro(nome_ficheiro_lista_de_utilizadores, lista_de_utilizadores)
     else:
         print("Cancelada.")
 
