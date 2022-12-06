@@ -1,3 +1,16 @@
+from espetaculos import (
+    nome_ficheiro_lista_de_espetaculos,
+    imprime_lista_espetaculos,
+    criar_espetaculo
+)
+from utilizadores import (
+    nome_ficheiro_lista_de_utilizadores
+)
+from io_ficheiros import (
+    ler_ficheiro,
+    guardar_ficheiro
+)
+
 
 def menu():
     """ Menu principal da aplicação"""
@@ -30,8 +43,8 @@ def menu():
         if op == "x":
             exit()
         elif op == "ne":
-            # todo - criar novo espetáculo
-            pass
+            novo_espetaculo = criar_espetaculo()
+            lista_de_espetaculos.append(novo_espetaculo)
         elif op == "nu":
             # todo - criar novo utilizador
             pass
@@ -39,8 +52,7 @@ def menu():
             # todo - criar novo bilhete
             pass
         elif op == "le":
-            # todo - listar espetaculos
-            pass
+            imprime_lista_espetaculos(lista_de_espetaculos)
         elif op == "lu":
             # todo - listar utilizadores
             pass
@@ -48,11 +60,12 @@ def menu():
             # todo - listar bilhetes
             pass
         elif op == "g":
-            # todo - guardar dados
+            guardar_dados(lista_de_espetaculos, lista_de_utilizadores)
             pass
         elif op == "c":
-            # todo - carregar dados
-            pass
+            lista_de_espetaculos = carregar_dados()
+            # todo - utilizadores ainda nao implementados
+            # lista_de_espetaculos, lista_de_utilizadores = carregar_dados()
         elif op == "cb":
             # todo - associar um bilhetes a um utilizador
             pass
@@ -60,14 +73,32 @@ def menu():
             pass
             # todo - imprime_lista_de_compras()
 
+
 def carregar_dados():
-    # todo
-    pass
+    """ Carrega os dados de espetáculos e utilizadores a partir de um ficheiro local
+
+    :return: o conteúdo de ambos ficheiro (depende dos dados guardados)
+    """
+    lista_de_espetaculos = ler_ficheiro(nome_ficheiro_lista_de_espetaculos)
+    # todo - ainda não implementado
+    # lista_de_utilizadores = ler_ficheiro(nome_ficheiro_lista_de_utilizadores)
+    return lista_de_espetaculos  #, lista_de_utilizadores
 
 
-def guardar_dados(lista_de_veiculos, lista_de_utilizadores):
-    # todo
-    pass
+def guardar_dados(lista_de_espetaculos, lista_de_utilizadores):
+    """ Guarda os dados da sessão para carregar numa sessão futura.
+
+    :param lista_de_espetaculos: lista de espetáculos da sessão
+    :param lista_de_utilizadores: lista de utilizadores da sessão
+    """
+
+    op = input("Os dados nos ficheiros serão sobrepostos. Continuar (S/n)?")
+    if op in ['s', 'S', '']:
+        guardar_ficheiro(nome_ficheiro_lista_de_espetaculos, lista_de_espetaculos)
+        #todo - ainda não implementado
+        #guardar_ficheiro(nome_ficheiro_lista_de_utilizadores, lista_de_utilizadores)
+    else:
+        print("Cancelada.")
 
 
 if __name__ == "__main__":
