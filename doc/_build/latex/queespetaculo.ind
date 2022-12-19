@@ -1,0 +1,56 @@
+\begin{sphinxtheindex}
+\let\bigletter\sphinxstyleindexlettergroup
+\let\spxpagem \sphinxstyleindexpagemain
+\let\spxentry \sphinxstyleindexentry
+\let\spxextra \sphinxstyleindexextra
+
+  \bigletter C
+  \item \spxentry{carregar\_dados()}\spxextra{no módulo main}, \hyperpage{3}
+  \item \spxentry{cria\_novo\_utilizador()}\spxextra{no módulo utilizadores}, \hyperpage{3}
+  \item \spxentry{criar\_espetaculo()}\spxextra{no módulo espetaculos}, \hyperpage{1}
+
+  \indexspace
+  \bigletter E
+  \item \spxentry{espetaculos}
+    \subitem \spxentry{módulo}, \hyperpage{1}
+
+  \indexspace
+  \bigletter G
+  \item \spxentry{guardar\_dados()}\spxextra{no módulo main}, \hyperpage{3}
+  \item \spxentry{guardar\_ficheiro()}\spxextra{no módulo io\_ficheiros}, \hyperpage{2}
+
+  \indexspace
+  \bigletter I
+  \item \spxentry{imprime\_lista()}\spxextra{no módulo io\_terminal}, \hyperpage{2}
+  \item \spxentry{imprime\_lista\_de\_dicionarios()}\spxextra{no módulo io\_terminal}, 
+		\hyperpage{3}
+  \item \spxentry{imprime\_lista\_de\_utilizadores()}\spxextra{no módulo utilizadores}, 
+		\hyperpage{3}
+  \item \spxentry{imprime\_lista\_espetaculos()}\spxextra{no módulo espetaculos}, \hyperpage{1}
+  \item \spxentry{io\_ficheiros}
+    \subitem \spxentry{módulo}, \hyperpage{2}
+  \item \spxentry{io\_terminal}
+    \subitem \spxentry{módulo}, \hyperpage{2}
+
+  \indexspace
+  \bigletter L
+  \item \spxentry{ler\_ficheiro()}\spxextra{no módulo io\_ficheiros}, \hyperpage{2}
+
+  \indexspace
+  \bigletter M
+  \item \spxentry{main}
+    \subitem \spxentry{módulo}, \hyperpage{3}
+  \item \spxentry{menu()}\spxextra{no módulo main}, \hyperpage{3}
+  \item \spxentry{módulo}
+    \subitem \spxentry{espetaculos}, \hyperpage{1}
+    \subitem \spxentry{io\_ficheiros}, \hyperpage{2}
+    \subitem \spxentry{io\_terminal}, \hyperpage{2}
+    \subitem \spxentry{main}, \hyperpage{3}
+    \subitem \spxentry{utilizadores}, \hyperpage{3}
+
+  \indexspace
+  \bigletter U
+  \item \spxentry{utilizadores}
+    \subitem \spxentry{módulo}, \hyperpage{3}
+
+\end{sphinxtheindex}
