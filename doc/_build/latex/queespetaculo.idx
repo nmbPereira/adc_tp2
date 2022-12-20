@@ -1,0 +1,21 @@
+\indexentry{módulo@\spxentry{módulo}!espetaculos@\spxentry{espetaculos}|hyperpage}{1}
+\indexentry{espetaculos@\spxentry{espetaculos}!módulo@\spxentry{módulo}|hyperpage}{1}
+\indexentry{criar\_espetaculo() (no módulo espetaculos)@\spxentry{criar\_espetaculo()}\spxextra{no módulo espetaculos}|hyperpage}{1}
+\indexentry{imprime\_lista\_espetaculos() (no módulo espetaculos)@\spxentry{imprime\_lista\_espetaculos()}\spxextra{no módulo espetaculos}|hyperpage}{1}
+\indexentry{módulo@\spxentry{módulo}!io\_ficheiros@\spxentry{io\_ficheiros}|hyperpage}{2}
+\indexentry{io\_ficheiros@\spxentry{io\_ficheiros}!módulo@\spxentry{módulo}|hyperpage}{2}
+\indexentry{guardar\_ficheiro() (no módulo io\_ficheiros)@\spxentry{guardar\_ficheiro()}\spxextra{no módulo io\_ficheiros}|hyperpage}{2}
+\indexentry{ler\_ficheiro() (no módulo io\_ficheiros)@\spxentry{ler\_ficheiro()}\spxextra{no módulo io\_ficheiros}|hyperpage}{2}
+\indexentry{módulo@\spxentry{módulo}!io\_terminal@\spxentry{io\_terminal}|hyperpage}{2}
+\indexentry{io\_terminal@\spxentry{io\_terminal}!módulo@\spxentry{módulo}|hyperpage}{2}
+\indexentry{imprime\_lista() (no módulo io\_terminal)@\spxentry{imprime\_lista()}\spxextra{no módulo io\_terminal}|hyperpage}{2}
+\indexentry{imprime\_lista\_de\_dicionarios() (no módulo io\_terminal)@\spxentry{imprime\_lista\_de\_dicionarios()}\spxextra{no módulo io\_terminal}|hyperpage}{3}
+\indexentry{módulo@\spxentry{módulo}!main@\spxentry{main}|hyperpage}{3}
+\indexentry{main@\spxentry{main}!módulo@\spxentry{módulo}|hyperpage}{3}
+\indexentry{carregar\_dados() (no módulo main)@\spxentry{carregar\_dados()}\spxextra{no módulo main}|hyperpage}{3}
+\indexentry{guardar\_dados() (no módulo main)@\spxentry{guardar\_dados()}\spxextra{no módulo main}|hyperpage}{3}
+\indexentry{menu() (no módulo main)@\spxentry{menu()}\spxextra{no módulo main}|hyperpage}{3}
+\indexentry{módulo@\spxentry{módulo}!utilizadores@\spxentry{utilizadores}|hyperpage}{3}
+\indexentry{utilizadores@\spxentry{utilizadores}!módulo@\spxentry{módulo}|hyperpage}{3}
+\indexentry{cria\_novo\_utilizador() (no módulo utilizadores)@\spxentry{cria\_novo\_utilizador()}\spxextra{no módulo utilizadores}|hyperpage}{3}
+\indexentry{imprime\_lista\_de\_utilizadores() (no módulo utilizadores)@\spxentry{imprime\_lista\_de\_utilizadores()}\spxextra{no módulo utilizadores}|hyperpage}{3}
